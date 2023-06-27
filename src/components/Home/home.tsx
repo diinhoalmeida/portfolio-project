@@ -14,7 +14,7 @@ const Home = () => {
   };
 
   return (
-    <Flex name="home" w="full" h="calc(100vh + 80px)" bgColor="#0a192f">
+    <Flex name="home" w="full" h="full" bgColor="#0a192f">
       {/* Container */}
       <Flex
         maxW="1000px"
