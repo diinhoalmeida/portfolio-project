@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { About, Home, NavBar, Skills } from "./components";
+import { About, Home, NavBar, Skills, Work } from "./components";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Work />
     </Box>
   );
 }
