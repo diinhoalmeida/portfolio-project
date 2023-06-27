@@ -1,12 +1,13 @@
 import { Box } from "@chakra-ui/react";
-import { About, Home, NavBar } from "./components";
+import { About, Home, NavBar, Skills } from "./components";
 
 function App() {
   return (
-    <Box h="100vh" w="100vw">
+    <Box>
       <NavBar />
       <Home />
       <About />
+      <Skills />
     </Box>
   );
 }
