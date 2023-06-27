@@ -2,7 +2,13 @@ import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box name="about" w="full" h="full" bgColor="#0a192f" textColor="gray.300">
+    <Box
+      name="about"
+      w="100vw"
+      h="100vh"
+      bgColor="#0a192f"
+      textColor="gray.300"
+    >
       <Flex
         flexDirection="column"
         justifyContent="center"
