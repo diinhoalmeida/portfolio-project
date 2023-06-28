@@ -15,7 +15,7 @@ const Work = () => {
   };
 
   return (
-    <Box name="work" w="100vw" textColor="gray.300" bgColor="#0a192f">
+    <Box id="work" w="100vw" textColor="gray.300" bgColor="#0a192f">
       <Flex
         maxW="1000px"
         mx="auto"
