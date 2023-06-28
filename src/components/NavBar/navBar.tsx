@@ -26,7 +26,7 @@ const NavBar = () => {
       </Box>
 
       {/* menu */}
-      <Menu />
+      <Menu nav={nav} />
 
       {/* Hamburger */}
       <Box
