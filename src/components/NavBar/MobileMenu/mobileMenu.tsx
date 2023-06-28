@@ -11,10 +11,11 @@ const MobileMenu = ({ nav, handleClick }: MobileMenuProps) => {
     <UnorderedList
       display={!nav ? "none" : "flex"}
       position="absolute"
+      ml={0}
       top={0}
-      w="full"
-      h="screen"
-      bg="#0a192f"
+      w="100vw"
+      h="100vh"
+      bgColor="#0a192f"
       flexDir="column"
       justifyContent="center"
       alignItems="center"

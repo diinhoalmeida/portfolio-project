@@ -1,10 +1,14 @@
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 
-const Menu = () => {
+interface MenuProps {
+  nav: boolean;
+}
+
+const Menu = ({ nav }: MenuProps) => {
   return (
     <UnorderedList
-      display={{ base: "none", md: "flex" }}
+      display={{ base: "none", md: !nav ? "flex" : "none" }}
       gap={14}
       styleType="none"
     >
