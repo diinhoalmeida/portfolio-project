@@ -21,7 +21,7 @@ import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
-    <Box name="skills" w="full" h="full" bgColor="#0a192f" textColor="gray.300">
+    <Box id="skills" w="full" h="full" bgColor="#0a192f" textColor="gray.300">
       {/* Container */}
       <Flex
         maxW="1000px"
