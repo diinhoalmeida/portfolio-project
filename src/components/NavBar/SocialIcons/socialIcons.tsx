@@ -26,6 +26,7 @@ const SocialIcons = () => {
           transition="left 0.3s ease"
         >
           <a
+            target="_blank"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -35,7 +36,7 @@ const SocialIcons = () => {
               paddingLeft: 20,
               paddingRight: 20,
             }}
-            href="/"
+            href="https://www.linkedin.com/in/edilson-almeida-2684a620a/"
           >
             Linkedin <FaLinkedin size={30} />
           </a>
@@ -53,6 +54,7 @@ const SocialIcons = () => {
           bgColor="#333333"
         >
           <a
+            target="_blank"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -62,7 +64,7 @@ const SocialIcons = () => {
               paddingLeft: 20,
               paddingRight: 20,
             }}
-            href="/"
+            href="https://github.com/diinhoalmeida"
           >
             Github <FaGithub size={30} />
           </a>
@@ -80,6 +82,7 @@ const SocialIcons = () => {
           bgColor="#6fc2b0"
         >
           <a
+            target="_blank"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -89,7 +92,7 @@ const SocialIcons = () => {
               paddingLeft: 20,
               paddingRight: 20,
             }}
-            href="/"
+            href="mailto:edifilho1409@outlook.com"
           >
             Email <HiOutlineMail size={30} />
           </a>
@@ -107,6 +110,7 @@ const SocialIcons = () => {
           transition="left 0.3s ease"
         >
           <a
+            target="_blank"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -116,7 +120,7 @@ const SocialIcons = () => {
               paddingLeft: 20,
               paddingRight: 20,
             }}
-            href="/"
+            href="https://drive.google.com/drive/folders/1AFMvzase_RsHO0nX34k6PDzkv4a81iy2?usp=drive_link"
           >
             Resume <BsFillPersonLinesFill size={30} />
           </a>
