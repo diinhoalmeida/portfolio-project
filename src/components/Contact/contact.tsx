@@ -3,7 +3,7 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 const Contact = () => {
   return (
     <Flex
-      name="contact"
+      id="contact"
       w="100vw"
       h="100vh"
       bgColor="#0a192f"
@@ -53,7 +53,7 @@ const Contact = () => {
         <textarea
           style={{ backgroundColor: "#ccd6f6", padding: 10 }}
           name="message"
-          rows="10"
+          rows={10}
           placeholder="Message"
         ></textarea>
         <Button
