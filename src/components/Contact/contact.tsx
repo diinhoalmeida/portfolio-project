@@ -23,20 +23,24 @@ const Contact = () => {
         }}
       >
         <Box pb="8">
-          <Text
-            fontSize="4xl"
-            fontWeight="bold"
-            display="inline"
-            borderBottom="4px"
-            borderColor="pink.600"
-            textColor="gray.300"
-          >
-            Contact
-          </Text>
-          <Text textColor="gray.300" py="4">
-            // Submit the form below or shoot me an email -
-            edifilho1409@outlook.com
-          </Text>
+          <h1>
+            <Text
+              fontSize="4xl"
+              fontWeight="bold"
+              display="inline"
+              borderBottom="4px"
+              borderColor="pink.600"
+              textColor="gray.300"
+            >
+              Contact
+            </Text>
+          </h1>
+          <h2>
+            <Text textColor="gray.300" py="4">
+              // Submit the form below or shoot me an email -
+              edifilho1409@outlook.com
+            </Text>
+          </h2>
         </Box>
         <input
           style={{ backgroundColor: "#ccd6f6", padding: 10 }}
