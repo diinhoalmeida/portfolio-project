@@ -17,15 +17,7 @@ import Vite from "../../assets/vite.png";
 import PrismaOrm from "../../assets/prismaorm.png";
 import ReactNative from "../../assets/reactnative.png";
 import Mongo from "../../assets/mongo.png";
-import {
-  Box,
-  Flex,
-  Grid,
-  Image,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Flex, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 
 const technologies = [
   { name: "HTML", image: HTML },
