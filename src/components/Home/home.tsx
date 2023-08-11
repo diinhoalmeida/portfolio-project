@@ -1,5 +1,4 @@
-// Home.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import {
