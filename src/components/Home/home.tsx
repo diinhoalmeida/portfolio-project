@@ -24,26 +24,30 @@ const Home = () => {
         justifyContent="center"
         h="full"
       >
-        <Text textColor="pink.600">Hi, my name is</Text>
-        <Text
-          fontSize={{ base: "4xl", sm: "7xl" }}
-          fontWeight="bold"
-          textColor="#ccd6f6"
-        >
-          EDILSON ALMEIDA
-        </Text>
-        <Text
-          fontSize={{ base: "4xl", sm: "7xl" }}
-          fontWeight="bold"
-          textColor="#8892b0"
-        >
-          I'm a Full Stack Developer.
-        </Text>
-        <Text textColor="#8892b0" py="4" maxW="700px">
-          I’m a full-stack developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive full-stack web applications.
-        </Text>
+        <h1>
+          <Text textColor="pink.600">Hi, my name is</Text>
+          <Text
+            fontSize={{ base: "4xl", sm: "7xl" }}
+            fontWeight="bold"
+            textColor="#ccd6f6"
+          >
+            EDILSON ALMEIDA
+          </Text>
+          <Text
+            fontSize={{ base: "4xl", sm: "7xl" }}
+            fontWeight="bold"
+            textColor="#8892b0"
+          >
+            I'm a Full Stack Developer.
+          </Text>
+        </h1>
+        <h2>
+          <Text textColor="#8892b0" py="4" maxW="700px">
+            I’m a full-stack developer specializing in building (and
+            occasionally designing) exceptional digital experiences. Currently,
+            I’m focused on building responsive full-stack web applications.
+          </Text>
+        </h2>
         <Box>
           <Button
             onMouseEnter={handleMouseEnter}

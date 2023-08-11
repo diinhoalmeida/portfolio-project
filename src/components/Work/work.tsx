@@ -26,17 +26,21 @@ const Work = () => {
         h="full"
       >
         <Box pb="8">
-          <Text
-            fontSize="4xl"
-            fontWeight="bold"
-            display="inline"
-            borderBottom="4px"
-            textColor="gray.300"
-            borderColor="pink.600"
-          >
-            Work
-          </Text>
-          <Text py="6">// Check out some of my recent work</Text>
+          <h1>
+            <Text
+              fontSize="4xl"
+              fontWeight="bold"
+              display="inline"
+              borderBottom="4px"
+              textColor="gray.300"
+              borderColor="pink.600"
+            >
+              Work
+            </Text>
+          </h1>
+          <h2>
+            <Text py="6">// Check out some of my recent work</Text>
+          </h2>
         </Box>
 
         {/* container for projects */}
