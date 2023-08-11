@@ -18,6 +18,15 @@ import PrismaOrm from "../../assets/prismaorm.png";
 import ReactNative from "../../assets/reactnative.png";
 import Mongo from "../../assets/mongo.png";
 import { Flex, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import {
+  skillsContainerStyles,
+  skillsContentStyles,
+  skillsSubtitleStyles,
+  skillsTitleStyles,
+  technologiesListStyles,
+  technologyImageStyles,
+  technologyListItemStyles,
+} from "./styles/skillStyles";
 
 const technologies = [
   { name: "HTML", image: HTML },
@@ -43,56 +52,22 @@ const technologies = [
 
 const Skills = () => {
   return (
-    <Flex id="skills" w="full" h="full" bgColor="#0a192f" textColor="gray.300">
-      <Flex
-        maxW="1000px"
-        mx="auto"
-        p="4"
-        flexDirection="column"
-        justifyContent="center"
-        w="full"
-      >
+    <Flex id="skills" {...skillsContainerStyles}>
+      <Flex {...skillsContentStyles}>
         <h1>
-          <Text
-            fontSize="4xl"
-            fontWeight="bold"
-            display="inline"
-            borderBottom="4px"
-            borderColor="pink.600"
-          >
-            Skills
-          </Text>
+          <Text {...skillsTitleStyles}>Skills</Text>
         </h1>
         <h2>
-          <Text py="4">// These are the technologies I've worked with</Text>
+          <Text {...skillsSubtitleStyles}>
+            // These are the technologies I've worked with
+          </Text>
         </h2>
 
-        <UnorderedList
-          display="grid"
-          gridTemplateColumns={"repeat(3, 1fr)"}
-          gap={"4"}
-          textAlign={"center"}
-          py={"8"}
-          padding={0}
-          listStyleType={"none"}
-        >
+        <UnorderedList {...technologiesListStyles}>
           {technologies.map((tech) => (
-            <ListItem
-              key={tech.name}
-              boxShadow={"md"}
-              display="flex"
-              justifyContent="space-between"
-              flexDirection="column"
-              transition={"transform 500ms"}
-              _hover={{
-                boxShadow: "md",
-                transform: "scale(1.1)",
-                transition: "transform 500ms",
-              }}
-            >
+            <ListItem key={tech.name} {...technologyListItemStyles}>
               <Image
-                w="20"
-                mx="auto"
+                {...technologyImageStyles}
                 src={tech.image}
                 alt={`${tech.name} icon`}
               />
