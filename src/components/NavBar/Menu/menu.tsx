@@ -14,12 +14,12 @@ const Menu = ({ nav }: MenuProps) => {
     >
       <ListItem {...listItemStyles}>
         <Link to="home" smooth={true} duration={500}>
-          Home
+          Início
         </Link>
       </ListItem>
       <ListItem {...listItemStyles}>
         <Link to="about" smooth={true} duration={500}>
-          About
+          Sobre
         </Link>
       </ListItem>
       <ListItem {...listItemStyles}>
@@ -29,12 +29,12 @@ const Menu = ({ nav }: MenuProps) => {
       </ListItem>
       <ListItem {...listItemStyles}>
         <Link to="work" smooth={true} duration={500}>
-          Work
+          Projetos
         </Link>
       </ListItem>
       <ListItem {...listItemStyles}>
         <Link to="contact" smooth={true} duration={500}>
-          Contact
+          Contato
         </Link>
       </ListItem>
     </UnorderedList>

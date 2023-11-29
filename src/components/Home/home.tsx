@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import {
   containerStyles,
@@ -27,33 +28,37 @@ const Home = () => {
     <Flex {...containerStyles}>
       <Flex {...contentStyles}>
         <h1>
-          <Text {...nameStyles}>Hi, my name is</Text>
+          <Text {...nameStyles}>Olá, meu nome é</Text>
           <Text {...titleStyles}>EDILSON ALMEIDA</Text>
-          <Text {...subtitleStyles}>I'm a Full Stack Developer.</Text>
+          <Text {...subtitleStyles}>Eu sou Full Stack Developer</Text>
         </h1>
         <h2>
           <Text {...descriptionStyles}>
-            I’m a full-stack developer specializing in building (and
-            occasionally designing) exceptional digital experiences. Currently,
-            I’m focused on building responsive full-stack web applications.
+            Sou um desenvolvedor full-stack especializado na criação (e
+            ocasionalmente no design) de experiências digitais excepcionais.
+            Atualmente, estou focado na construção de aplicações web full-stack
+            responsivas.
           </Text>
         </h2>
         <Box>
-          <Button
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            {...buttonStyles}
-          >
-            View Work
-            <Box
-              {...arrowStyles}
-              transform={hovered ? "rotate(90deg)" : "none"}
+          <Link to="work" smooth={true} duration={500}>
+            <Button
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              {...buttonStyles}
             >
-              <span style={{ marginLeft: 3 }}>
-                <HiArrowNarrowRight />
-              </span>
-            </Box>
-          </Button>
+              Ver projetos
+              <Box
+                {...arrowStyles}
+                transform={hovered ? "rotate(90deg)" : "none"}
+              >
+                <span style={{ marginLeft: 3 }}>
+                  <HiArrowNarrowRight />
+                </span>
+              </Box>
+            </Button>
+            Início
+          </Link>
         </Box>
       </Flex>
     </Flex>

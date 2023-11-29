@@ -50,7 +50,7 @@ const SocialIcons = () => {
             style={linkStyles}
             href="https://drive.google.com/drive/folders/1AFMvzase_RsHO0nX34k6PDzkv4a81iy2?usp=drive_link"
           >
-            Resume <BsFillPersonLinesFill size={30} />
+            Currículo <BsFillPersonLinesFill size={30} />
           </a>
         </ListItem>
       </UnorderedList>

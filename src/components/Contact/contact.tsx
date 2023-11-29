@@ -18,11 +18,11 @@ const Contact = () => {
       >
         <Box pb="8">
           <h1>
-            <Text {...sectionTitleStyles}>Contact</Text>
+            <Text {...sectionTitleStyles}>Contato</Text>
           </h1>
           <h2>
             <Text {...sectionSubtitleStyles}>
-              Submit the form below or shoot me an email -
+              Complete o formulário abaixo ou me envie um e-mail -
               edifilho1409@outlook.com
             </Text>
           </h2>
@@ -40,7 +40,7 @@ const Contact = () => {
           rows={10}
           placeholder="Message"
         ></textarea>
-        <Button {...buttonStyles}>Let's Collaborate</Button>
+        <Button {...buttonStyles}>Vamos trabalhar juntos!</Button>
       </form>
     </Flex>
   );

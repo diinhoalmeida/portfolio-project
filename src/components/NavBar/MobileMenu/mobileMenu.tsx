@@ -24,12 +24,12 @@ const MobileMenu = ({ nav, handleClick }: MobileMenuProps) => {
     >
       <ListItem py={6} fontSize="4xl">
         <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-          Home
+          Início
         </Link>
       </ListItem>
       <ListItem py={6} fontSize="4xl">
         <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-          About
+          Sobre
         </Link>
       </ListItem>
       <ListItem py={6} fontSize="4xl">
@@ -39,12 +39,12 @@ const MobileMenu = ({ nav, handleClick }: MobileMenuProps) => {
       </ListItem>
       <ListItem py={6} fontSize="4xl">
         <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-          Work
+          Projetos
         </Link>
       </ListItem>
       <ListItem py={6} fontSize="4xl">
         <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-          Contact
+          Contato
         </Link>
       </ListItem>
     </UnorderedList>

@@ -32,7 +32,7 @@ export const data = [
     name: "GitHub Requests",
     image: GitHubRequests,
     github: "https://github.com/diinhoalmeida/get-git-users",
-    live: "https://shopping-cart-drab-rho.vercel.app/store",
+    live: "https://get-git-users.vercel.app/",
   },
   {
     id: 5,

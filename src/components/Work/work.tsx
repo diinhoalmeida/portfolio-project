@@ -29,11 +29,11 @@ const Work = () => {
       <Flex {...workContentStyles}>
         <Box pb="8">
           <h1>
-            <Text {...workTitleStyles}>Work</Text>
+            <Text {...workTitleStyles}>Projetos Pessoais</Text>
           </h1>
           <h2>
             <Text {...workSubtitleStyles}>
-              // Check out some of my recent work
+              // Dê uma olhada em meus projetos pessoais
             </Text>
           </h2>
         </Box>
