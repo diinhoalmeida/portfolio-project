@@ -25,7 +25,7 @@ export const data = [
     name: "Eletronic Store",
     image: EletronicStore,
     github: "https://github.com/diinhoalmeida/shopping-cart",
-    live: "https://get-git-users.vercel.app/",
+    live: "https://shopping-cart-drab-rho.vercel.app/",
   },
   {
     id: 4,
@@ -46,6 +46,6 @@ export const data = [
     name: "Portfolio",
     image: Portfolio,
     github: "https://github.com/diinhoalmeida/portfolio-project",
-    live: "",
+    live: "https://portfolio-project-chi-six.vercel.app/",
   },
 ];
