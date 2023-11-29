@@ -1,6 +1,17 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { useState } from "react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import {
+  containerStyles,
+  contentStyles,
+  nameStyles,
+  titleStyles,
+  subtitleStyles,
+  descriptionStyles,
+  buttonStyles,
+  arrowStyles,
+} from "./styles/homeStyles";
 
 const Home = () => {
   const [hovered, setHovered] = useState(false);
@@ -14,68 +25,40 @@ const Home = () => {
   };
 
   return (
-    <Flex id="home" w="100vw" h="100vh" bgColor="#0a192f">
-      {/* Container */}
-      <Flex
-        maxW="1000px"
-        mx="auto"
-        px="8"
-        flexDirection="column"
-        justifyContent="center"
-        h="full"
-      >
-        <Text textColor="pink.600">Hi, my name is</Text>
-        <Text
-          fontSize={{ base: "4xl", sm: "7xl" }}
-          fontWeight="bold"
-          textColor="#ccd6f6"
-        >
-          EDILSON ALMEIDA
-        </Text>
-        <Text
-          fontSize={{ base: "4xl", sm: "7xl" }}
-          fontWeight="bold"
-          textColor="#8892b0"
-        >
-          I'm a Full Stack Developer.
-        </Text>
-        <Text textColor="#8892b0" py="4" maxW="700px">
-          I’m a full-stack developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive full-stack web applications.
-        </Text>
+    <Flex {...containerStyles}>
+      <Flex {...contentStyles}>
+        <h1>
+          <Text {...nameStyles}>Olá, meu nome é</Text>
+          <Text {...titleStyles}>EDILSON ALMEIDA</Text>
+          <Text {...subtitleStyles}>Eu sou Full Stack Developer</Text>
+        </h1>
+        <h2>
+          <Text {...descriptionStyles}>
+            Sou um desenvolvedor full-stack especializado na criação (e
+            ocasionalmente no design) de experiências digitais excepcionais.
+            Atualmente, estou focado na construção de aplicações web full-stack
+            responsivas.
+          </Text>
+        </h2>
         <Box>
-          <Button
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            textColor="white"
-            bgColor="#0a192f"
-            borderColor="white"
-            borderWidth="1px"
-            px={6}
-            py={3}
-            my={2}
-            display="flex"
-            alignItems="center"
-            _hover={{
-              bgColor: "#B83280",
-              borderColor: "#B83280",
-              textColor: "",
-            }}
-          >
-            View Work
-            <Box
-              display="inline-flex"
-              alignItems="center"
-              cursor="pointer"
-              transform={hovered ? "rotate(90deg)" : "none"}
-              transitionDuration="300ms"
+          <Link to="work" smooth={true} duration={500}>
+            <Button
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              {...buttonStyles}
             >
-              <span style={{ marginLeft: 3 }}>
-                <HiArrowNarrowRight />
-              </span>
-            </Box>
-          </Button>
+              Ver projetos
+              <Box
+                {...arrowStyles}
+                transform={hovered ? "rotate(90deg)" : "none"}
+              >
+                <span style={{ marginLeft: 3 }}>
+                  <HiArrowNarrowRight />
+                </span>
+              </Box>
+            </Button>
+            Início
+          </Link>
         </Box>
       </Flex>
     </Flex>

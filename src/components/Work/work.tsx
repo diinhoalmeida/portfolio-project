@@ -1,6 +1,15 @@
-import { Box, Button, Flex, Grid, Text } from "@chakra-ui/react";
-import { data } from "../../data/data";
 import { useState } from "react";
+import { Box, Button, Flex, Grid, Text } from "@chakra-ui/react";
+import {
+  workContainerStyles,
+  workContentStyles,
+  workTitleStyles,
+  workSubtitleStyles,
+  projectItemStyles,
+  hoverOverlayStyles,
+  projectButtonStyles,
+} from "./styles/workStyles";
+import { data } from "../../data/data";
 
 const Work = () => {
   const [projectHover, setProjectHover] = useState<number>();
@@ -10,36 +19,25 @@ const Work = () => {
   const handleSelectWork = (id: number) => {
     setProjectHover(id);
   };
+
   const handleClearWork = () => {
     setProjectHover(undefined);
   };
 
   return (
-    <Box id="work" w="100vw" textColor="gray.300" bgColor="#0a192f">
-      <Flex
-        maxW="1000px"
-        mx="auto"
-        p="4"
-        flexDirection="column"
-        justifyContent="center"
-        w="full"
-        h="full"
-      >
+    <Box id="work" {...workContainerStyles}>
+      <Flex {...workContentStyles}>
         <Box pb="8">
-          <Text
-            fontSize="4xl"
-            fontWeight="bold"
-            display="inline"
-            borderBottom="4px"
-            textColor="gray.300"
-            borderColor="pink.600"
-          >
-            Work
-          </Text>
-          <Text py="6">// Check out some of my recent work</Text>
+          <h1>
+            <Text {...workTitleStyles}>Projetos Pessoais</Text>
+          </h1>
+          <h2>
+            <Text {...workSubtitleStyles}>
+              // Dê uma olhada em meus projetos pessoais
+            </Text>
+          </h2>
         </Box>
 
-        {/* container for projects */}
         <Grid
           templateColumns={{
             base: "repeat(1, 1fr)",
@@ -48,16 +46,10 @@ const Work = () => {
           }}
           gap="4"
         >
-          {/* Grid Item */}
           {project.map((item, index) => (
             <Flex
               key={index}
-              boxShadow="#040c16"
-              shadow="lg"
-              w={{ base: "300px", md: "full" }}
-              h="200px"
-              mx="auto"
-              rounded="md"
+              {...projectItemStyles}
               onMouseEnter={() => handleSelectWork(index)}
               onMouseLeave={handleClearWork}
               style={{
@@ -67,18 +59,14 @@ const Work = () => {
                 backgroundSize: "cover",
               }}
             >
-              {/* Hover effect for images */}
               <Flex
-                justifyContent="center"
-                textAlign="center"
-                alignContent="center"
-                flexDirection="column"
+                {...hoverOverlayStyles}
+                projectHover={projectHover}
                 bgColor={
                   projectHover === index ? "rgba(10,23,55,0.5)" : "inherit"
                 }
                 opacity={projectHover === index ? 5 : -100}
-                w="full"
-                h="full"
+                index={index}
               >
                 <span
                   style={{
@@ -91,37 +79,11 @@ const Work = () => {
                   {item.name}
                 </span>
                 <Box pt="8" textAlign="center">
-                  {/* eslint-disable-next-line */}
                   <a href={item.github} target="_blank">
-                    <Button
-                      textAlign="center"
-                      rounded="lg"
-                      px="4"
-                      py="3"
-                      m="2"
-                      bgColor="white"
-                      textColor="gray.700"
-                      fontWeight="bold"
-                      fontSize="lg"
-                    >
-                      Code
-                    </Button>
+                    <Button {...projectButtonStyles}>Code</Button>
                   </a>
-                  {/* eslint-disable-next-line */}
                   <a href={item.live} target="_blank">
-                    <Button
-                      textAlign="center"
-                      rounded="lg"
-                      px="4"
-                      py="3"
-                      m="2"
-                      bgColor="white"
-                      textColor="gray.700"
-                      fontWeight="bold"
-                      fontSize="lg"
-                    >
-                      Live
-                    </Button>
+                    <Button {...projectButtonStyles}>Live</Button>
                   </a>
                 </Box>
               </Flex>
