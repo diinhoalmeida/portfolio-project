@@ -4,6 +4,7 @@ import GitHubRequests from "../assets/projects/githubrequests.png";
 import MyBlog from "../assets/projects/myblog.png";
 import Portfolio from "../assets/projects/portfolio.png";
 import WeatherProject from "../assets/projects/weatheproject.png";
+import IgniteFeed from "../assets/projects/ignite-feed.png";
 
 export const data = [
   {
@@ -47,5 +48,12 @@ export const data = [
     image: Portfolio,
     github: "https://github.com/diinhoalmeida/portfolio-project",
     live: "https://portfolio-project-chi-six.vercel.app/",
+  },
+  {
+    id: 7,
+    name: "Ignite Feed",
+    image: IgniteFeed,
+    github: "https://github.com/diinhoalmeida/ignite-feed",
+    live: "https://ignite-feed-ed.vercel.app/",
   },
 ];
