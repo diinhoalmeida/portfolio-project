@@ -29,19 +29,19 @@ const About = () => {
           <Box {...aboutTextStyle}>
             <h2>
               <Text>
-                Hi. I'm Edilson Almeida, nice to meet you. Please take a look
-                around.
+                Oi. Eu sou Edilson Almeida, prazer em conhecê-lo. Por favor, dê
+                uma olhada ao redor.
               </Text>
             </h2>
           </Box>
           <Box>
             <h2>
               <Text {...descriptionTextStyle}>
-                I am passionate about building excellent software that improves
-                the lives of those around me. I specialize in creating software
-                for clients ranging from individuals and small-businesses all
-                the way to large enterprise corporations. What would you do if
-                you had a software expert available at your fingertips?
+                Eu sou apaixonado por construir software excelente que melhora a
+                vida das pessoas ao meu redor. Me especializo em criar software
+                para clientes que vão desde indivíduos e pequenas empresas até
+                grandes corporações empresariais. O que você faria se tivesse um
+                especialista em software disponível ao alcance dos seus dedos?
               </Text>
             </h2>
           </Box>
